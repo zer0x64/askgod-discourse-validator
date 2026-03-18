@@ -1,0 +1,18 @@
+type: topic
+trigger:
+  type: multiFlag
+  tags:
+    - my-flag-tag
+    - my-second-tag
+    - my-third-tag
+  threshold: 2
+
+api:
+  user: test
+
+title: Congratulations on your first flag!
+body: |-
+  Congratulations!
+  You have just scored your first %{team_score} points!
+
+  Be that the first of many more flags for your team!

@@ -123,6 +123,12 @@ function parseTrigger(fileName, trigger) {
           `File ${fileName} is using a score trigger, but is missing "value" field`
         );
       break;
+    case "multiFlag":
+      if (!trigger.tags || trigger.tags.length == 0)
+        fail(
+          `File ${fileName} is using a multiFlag trigger, but is missing "tags" field`,
+        );
+      break;
     default:
       fail(
         `File ${fileName} has an invalid trigger type ${trigger.type}, must be one of flag, timer, score`
