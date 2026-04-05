@@ -1,7 +1,7 @@
 type: topic
 trigger:
-  type: multiFlag
-  tags:
+  type: flag
+  tag:
     - my-flag-tag
     - my-second-tag
     - my-third-tag
